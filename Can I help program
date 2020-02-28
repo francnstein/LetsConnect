@@ -1,0 +1,44 @@
+# GoJunito  ---------->   An A.i Virtual Assisant
+print(""" Thank you for contacting GoJunito!
+Do you prefer to option #1 Email or option #2 Chat? """)
+
+option = input("> ")
+
+if option == "1":
+    print("There is a 24hr response time for email.")
+    print("Still want to email?")
+    print("1. Yes")
+    print("2. No")
+
+    contact_us = input("> ")
+
+    if contact_us == "1":
+        print("We appreciate your pateince , someone from our team will reach you within 24hrs.")
+        print("Is there something specific?")
+        print("1. Looking for more information.")
+        print("2. Would like to collaborate.")
+
+        cust_serv = input("> ")
+
+        if cust_serv =="1":
+            print("That is amazing! Thank you for contacting us.")
+        elif cust_serv == "2":
+            print("We try to answer all request , thank you for your patience.")
+
+
+elif option == "2":
+    print(" You have chosen to chat, someone will be with you shortly.")
+
+    more_info = input(" What is your name? ")
+    print(f" {more_info} Where did you hear about GoJunito?")
+    print("1. Social Media")
+    print("2. Website") 
+
+    some_more_info = input("> ")
+
+    if some_more_info == "1" or some_more_info == "2":
+        print("That's great! Make sure you share our page.")
+        print(" More coming soon !!! ")
+
+    elif some_more_info == "2":
+        print("Make sure you subscribe for all the updated news!")
